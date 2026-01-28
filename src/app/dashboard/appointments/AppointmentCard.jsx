@@ -1,5 +1,7 @@
+"use client";
 import { BadgeAlert, BadgeCheck, Calendar } from "lucide-react";
 import React from "react";
+import CountUp from "react-countup";
 
 const AppointmentCard = () => {
   return (
@@ -10,7 +12,9 @@ const AppointmentCard = () => {
           <p className="text-sm text-gray-400">Total Booked</p>
         </div>
         <div>
-          <h1 className="text-2xl">65</h1>
+          <h1 className="text-2xl">
+            <CountUp end={65} duration={5}></CountUp>
+          </h1>
           <p className="text-sm text-green-500">+8 this week</p>
         </div>
       </div>
@@ -20,7 +24,9 @@ const AppointmentCard = () => {
           <p className="text-sm text-gray-400">AI Booked</p>
         </div>
         <div>
-          <h1 className="text-2xl">28</h1>
+          <h1 className="text-2xl">
+            <CountUp end={28} duration={5}></CountUp>
+          </h1>
           <p className="text-sm text-green-500">82% of total</p>
         </div>
       </div>
@@ -30,7 +36,9 @@ const AppointmentCard = () => {
           <p className="text-sm text-gray-400">Total Booked</p>
         </div>
         <div>
-          <h1 className="text-2xl">65</h1>
+          <h1 className="text-2xl">
+            <CountUp end={65} duration={5}></CountUp>
+          </h1>
           <p className="text-sm text-green-500">+8 this week</p>
         </div>
       </div>

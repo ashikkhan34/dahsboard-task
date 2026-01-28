@@ -62,7 +62,6 @@ const CallLogPage = () => {
 
   return (
     <div className="">
-      {/* Top Header with Search and Filters */}
       <div className="md:flex  justify-between items-center  mb-8">
         <div className="relative flex-1 md:max-w-[500px] mb-4 md:mb-0 ">
           <Search
@@ -89,7 +88,7 @@ const CallLogPage = () => {
 
       <div className="lg:flex gap-5  px-2">
         {/* Left Side: Call List */}
-        <div className="md:w-[505px] h-[643px] bg-[#101A3A] rounded-xl p-5 mb-6">
+        <div className="md:w-[480px] h-[643px] bg-[#101A3A] rounded-xl p-5 mb-6">
           <h3 className="text-xl  mb-4">Call List</h3>
           <div className="space-y-2">
             {callList.map((call, idx) => (
@@ -136,7 +135,7 @@ const CallLogPage = () => {
         </div>
 
         {/* Right Side: Call Details with Dotted Border */}
-        <div className="md:w-[570px] bg-[#101A3A] rounded-xl p-5 ">
+        <div className="md:w-[520px] bg-[#101A3A] rounded-xl p-5 ">
           <h3 className="text-xl mb-4">Call Details</h3>
 
           <div className="grid grid-cols-2 gap-x-12 gap-y-8 mb-4">

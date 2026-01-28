@@ -1,5 +1,14 @@
-import { ArrowRightLeft, BotMessageSquare, Calendar, CircleX, Clock, Phone } from "lucide-react";
+"use client";
+import {
+  ArrowRightLeft,
+  BotMessageSquare,
+  Calendar,
+  CircleX,
+  Clock,
+  Phone,
+} from "lucide-react";
 import React from "react";
+import CountUp from "react-countup";
 
 const Card = () => {
   return (
@@ -7,7 +16,10 @@ const Card = () => {
       <div className="flex justify-between p-6 bg-[#0E1836] rounded-lg h-[146px]">
         <div>
           <p className="text-gray-500 text-[14px]">Total Calls Today</p>
-          <h1 className=" text-[30px]">127</h1>
+          <h1 className=" text-[30px]">
+            {" "}
+            <CountUp end={127} duration={4} />
+          </h1>
           <p className="text-green-500 text-[14px] mt-2">+12%</p>
         </div>
         <div className="bg-[#2B7FFF] w-12 justify-center items-center flex h-12 rounded-lg">
@@ -17,7 +29,10 @@ const Card = () => {
       <div className="flex justify-between p-6 bg-[#0E1836] rounded-lg h-[146px]">
         <div>
           <p className="text-gray-500 text-[14px]">AI-Handled Calls</p>
-          <h1 className=" text-[30px]">98</h1>
+          <h1 className=" text-[30px]">
+            {" "}
+            <CountUp end={98} duration={5} />
+          </h1>
           <p className="text-green-500 text-[14px] mt-2">+77%</p>
         </div>
         <div className="bg-linear-to-r from-[#F6339A] to-[#AD46FF] w-12 justify-center items-center flex h-12 rounded-lg">
@@ -27,7 +42,10 @@ const Card = () => {
       <div className="flex justify-between p-6 bg-[#0E1836] rounded-lg h-[146px]">
         <div>
           <p className="text-gray-500 text-[14px]">Warm Transfer</p>
-          <h1 className=" text-[30px]">23</h1>
+          <h1 className=" text-[30px]">
+            {" "}
+            <CountUp end={23} duration={4} />
+          </h1>
           <p className="text-green-500 text-[14px] mt-2">+18%</p>
         </div>
         <div className="bg-linear-to-r from-[#FB2C36] to-[#FF6900] w-12 justify-center items-center flex h-12 rounded-lg">
@@ -37,7 +55,10 @@ const Card = () => {
       <div className="flex justify-between p-6 bg-[#0E1836] rounded-lg h-[146px]">
         <div>
           <p className="text-gray-500 text-[14px]">Appointments Booked</p>
-          <h1 className=" text-[30px]">34</h1>
+          <h1 className=" text-[30px]">
+            {" "}
+            <CountUp end={34} duration={5} />
+          </h1>
           <p className="text-green-500 text-[14px] mt-2">+8%</p>
         </div>
         <div className="bg-linear-to-r from-[#00BC7D] to-[#00C950] w-12 justify-center items-center flex h-12 rounded-lg">
@@ -47,7 +68,10 @@ const Card = () => {
       <div className="flex justify-between p-6 bg-[#0E1836] rounded-lg h-[146px]">
         <div>
           <p className="text-gray-500 text-[14px]">Missed/Failed Calls</p>
-          <h1 className=" text-[30px]">6</h1>
+          <h1 className=" text-[30px]">
+            {" "}
+            <CountUp end={6} duration={2} />
+          </h1>
           <p className="text-red-500 text-[14px] mt-2">-3%</p>
         </div>
         <div className="bg-[#FB2C36] w-12 justify-center items-center flex h-12 rounded-lg">
@@ -57,7 +81,9 @@ const Card = () => {
       <div className="flex justify-between p-6 bg-[#0E1836] rounded-lg h-[146px]">
         <div>
           <p className="text-gray-500 text-[14px]">Avg Call Duration</p>
-          <h1 className=" text-[30px]">42</h1>
+          <h1 className=" text-[30px]">
+            <CountUp end={42} duration={4}></CountUp>
+          </h1>
           <p className="text-green-500 text-[14px] mt-2">+15%</p>
         </div>
         <div className="bg-[#2B7FFF] w-12 justify-center items-center flex h-12 rounded-lg">
