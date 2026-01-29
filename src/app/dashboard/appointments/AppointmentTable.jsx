@@ -72,7 +72,7 @@ const clientAppointments = [
 export default function AppointmentTable() {
   return (
     <div className="flex mx-auto mt-8">
-      <div className=" w-[375px] flex lg:w-full overflow-x-auto mx-auto rounded-xl border border-slate-700 bg-[#111B3B] ml-1 px-4">
+      <div className=" w-[360px] flex lg:w-full overflow-x-auto mx-auto rounded-xl border border-slate-700 bg-[#111B3B] ml-1 px-4">
         <table className=" w-full text-sm text-left ">
           <thead>
             <tr className="text-xs md:text-sm">

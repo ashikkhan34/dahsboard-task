@@ -15,7 +15,7 @@ const Pagination = () => {
           <button
             key={page}
             onClick={() => setCurrentPage(page)}
-            className={`px-3 py-1 text-sm font-medium transition-all duration-200 ${
+            className={`px-2 py-1 text-sm font-medium transition-all duration-200 ${
               currentPage === page
                 ? "bg-[#a3c7ff] text-[#0a192f] rounded-sm"
                 : "text-[#3b82f6] hover:text-white"
@@ -43,7 +43,7 @@ const Pagination = () => {
 
   return (
     <div className="flex text-xs items-center justify-center mt-10 select-none">
-      <div className="flex items-center space-x-6">
+      <div className="flex items-center space-x-2">
         {/* Previous Button */}
         <button
           onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}

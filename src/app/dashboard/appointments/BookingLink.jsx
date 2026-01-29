@@ -14,7 +14,7 @@ const BookingLink = () => {
     });
   };
   return (
-    <div className="w-full bg-[#1A1A2E] border border-slate-800 rounded-xl mt-5 px-4 lg:px-0  p-5">
+    <div className="w-full bg-[#1A1A2E] border border-slate-800 rounded-xl mt-5 lg:px-0 px-4 p-4">
       <h2 className="text-sm font-medium mb-4 px-4 text-slate-200">
         Your Booking Link
       </h2>
