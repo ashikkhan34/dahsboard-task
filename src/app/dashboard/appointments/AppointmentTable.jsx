@@ -14,28 +14,6 @@ const clientAppointments = [
   },
   {
     id: 2,
-    client_name: "John Smith",
-    client_phone: "01844556677",
-    client_email: "john@gmail.com",
-    device: "Samsung Galaxy S22",
-    repair_type: "Battery",
-    date: "02/06/2026",
-    slot_no: 2,
-    start_time: "10:00",
-  },
-  {
-    id: 3,
-    client_name: "Alex Rahman",
-    client_phone: "01799887766",
-    client_email: "alex@gmail.com",
-    device: "Xiaomi Note 12",
-    repair_type: "Charging Port",
-    date: "03/06/2026",
-    slot_no: 3,
-    start_time: "11:30",
-  },
-  {
-    id: 1,
     client_name: "Jane.D",
     client_phone: "01960685765",
     client_email: "admin@gmail.com",
@@ -46,26 +24,48 @@ const clientAppointments = [
     start_time: "09:00",
   },
   {
-    id: 2,
-    client_name: "John Smith",
-    client_phone: "01844556677",
-    client_email: "john@gmail.com",
-    device: "Samsung Galaxy S22",
-    repair_type: "Battery",
+    id: 3,
+    client_name: "Jane.D",
+    client_phone: "01960685765",
+    client_email: "admin@gmail.com",
+    device: "Apple / iPhone 13 Pro",
+    repair_type: "Screen",
     date: "02/06/2026",
-    slot_no: 2,
-    start_time: "10:00",
+    slot_no: 1,
+    start_time: "09:00",
   },
   {
-    id: 3,
-    client_name: "Alex Rahman",
-    client_phone: "01799887766",
-    client_email: "alex@gmail.com",
-    device: "Xiaomi Note 12",
-    repair_type: "Charging Port",
-    date: "03/06/2026",
-    slot_no: 3,
-    start_time: "11:30",
+    id: 4,
+    client_name: "Jane.D",
+    client_phone: "01960685765",
+    client_email: "admin@gmail.com",
+    device: "Apple / iPhone 13 Pro",
+    repair_type: "Screen",
+    date: "02/06/2026",
+    slot_no: 1,
+    start_time: "09:00",
+  },
+  {
+    id: 5,
+    client_name: "Jane.D",
+    client_phone: "01960685765",
+    client_email: "admin@gmail.com",
+    device: "Apple / iPhone 13 Pro",
+    repair_type: "Screen",
+    date: "02/06/2026",
+    slot_no: 1,
+    start_time: "09:00",
+  },
+  {
+    id: 6,
+    client_name: "Jane.D",
+    client_phone: "01960685765",
+    client_email: "admin@gmail.com",
+    device: "Apple / iPhone 13 Pro",
+    repair_type: "Screen",
+    date: "02/06/2026",
+    slot_no: 1,
+    start_time: "09:00",
   },
 ];
 
@@ -73,8 +73,8 @@ export default function AppointmentTable() {
   return (
     <div className="w-full mt-8">
       {/* Desktop Table */}
-      <div className="overflow-x-auto rounded-xl border border-slate-700 bg-[#111B3B]">
-        <table className="w-full text-sm text-left text-slate-300">
+      <div className="max-w-full overflow-x-auto mx-auto rounded-xl border border-slate-700 bg-[#111B3B]">
+        <table className="min-w-[800px] w-full text-sm text-left text-slate-300">
           <thead>
             <tr>
               <th className="px-4 py-3">Client Name</th>

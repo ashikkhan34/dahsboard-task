@@ -19,7 +19,7 @@ export default function Navbar() {
 
   return (
     <nav className="w-full bg-[#111B3C] p-4 flex justify-between items-center">
-      <h2 className="text-sm md:text-lg ml-20 md:ml-0 font-bold">
+      <h2 className="text-sm md:text-lg ml-14 md:ml-0 font-bold">
         {getTitle()}
       </h2>
 

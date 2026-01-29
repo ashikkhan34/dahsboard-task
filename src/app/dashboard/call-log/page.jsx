@@ -11,7 +11,6 @@ import {
 } from "lucide-react";
 
 const CallLogPage = () => {
-  // Exact fake data following your images
   const callList = [
     {
       id: 1,
@@ -63,7 +62,7 @@ const CallLogPage = () => {
   return (
     <div className="">
       <div className="md:flex  justify-between items-center  mb-8">
-        <div className="relative flex-1 md:max-w-[500px] mb-4 md:mb-0 ">
+        <div className="relative flex-1 w-full lg:max-w-[480px] mb-4 md:mb-0 ">
           <Search
             className="absolute left-3 top-1/2 -translate-y-1/2 ml-3 text-slate-500"
             size={18}
@@ -71,14 +70,14 @@ const CallLogPage = () => {
           <input
             type="text"
             placeholder="Search by phone number, issue type..."
-            className="w-full bg-[#101A3A] border border-slate-800 rounded-lg py-2 pl-10 pr-4 focus:outline-none focus:border-blue-500 text-sm ml-3"
+            className="w-full bg-[#101A3A] border border-slate-800 rounded-lg py-2 pl-10 pr-4 focus:outline-none focus:border-blue-500 text-sm md:ml-3"
           />
         </div>
         <div className="flex mr-3 gap-5">
           {["All Type", "All Issues", "Today"].map((filter) => (
             <button
               key={filter}
-              className="bg-[#101A3A] border gap-3 border-slate-800 px-6 py-2 rounded-lg flex items-center  hover:bg-[#162238] text-sm"
+              className="bg-[#101A3A] border gap-2 mx-auto border-slate-800 px-1 md:px-6 py-2 rounded-lg flex items-center  hover:bg-[#162238] text-xs md:text-sm"
             >
               {filter} <ChevronDown size={16} />
             </button>
@@ -86,10 +85,10 @@ const CallLogPage = () => {
         </div>
       </div>
 
-      <div className="lg:flex gap-5  px-2">
+      <div className="flex flex-col lg:flex-row md:gap-10 px-2">
         {/* Left Side: Call List */}
-        <div className="md:w-[480px] h-[643px] bg-[#101A3A] rounded-xl p-5 mb-6">
-          <h3 className="text-xl  mb-4">Call List</h3>
+        <div className="w-full md:w-[480px] h-[643px] bg-[#101A3A] rounded-xl md:p-5 mb-6">
+          <h3 className="text-xl p-4 md:p-0 ">Call List</h3>
           <div className="space-y-2">
             {callList.map((call, idx) => (
               <div
@@ -107,12 +106,12 @@ const CallLogPage = () => {
                     </div>
                   </div>
                   <span
-                    className={`text-[10px] uppercase font-bold px-3 py-1 rounded-full border ${
+                    className={`text-[12px]  px-3 py-1 rounded-lg border ${
                       call.status === "AI Resolved"
-                        ? "text-emerald-400 border-emerald-900/50 bg-emerald-950/30"
+                        ? "text-[#05DF72] border-emerald-900/50 bg-[#00C9504D]/50"
                         : call.status === "Dropped"
-                          ? "text-rose-400 border-rose-900/50 bg-rose-950/30"
-                          : "text-amber-400 border-amber-900/50 bg-amber-950/30"
+                          ? "text-[#FF0404] px-3 border-rose-900/50 bg-[#FB2C3633]"
+                          : "text-[#FF8904] border-amber-900/50 bg-[#FF690033]/70"
                     }`}
                   >
                     {call.status}
@@ -135,7 +134,7 @@ const CallLogPage = () => {
         </div>
 
         {/* Right Side: Call Details with Dotted Border */}
-        <div className="md:w-[520px] bg-[#101A3A] rounded-xl p-5 ">
+        <div className="w-full md:w-[520px] bg-[#101A3A] rounded-xl p-5 ">
           <h3 className="text-xl mb-4">Call Details</h3>
 
           <div className="grid grid-cols-2 gap-x-12 gap-y-8 mb-4">
@@ -167,7 +166,7 @@ const CallLogPage = () => {
 
           <div className="mb-10">
             <p className="text-slate-500 text-sm mb-2">Call Type</p>
-            <span className="bg-emerald-950/60 text-emerald-400 border border-emerald-900 px-4 py-2 rounded-xl text-sm  uppercase">
+            <span className="bg-emerald-950/60 text-emerald-400 border border-emerald-900 px-4 py-2 rounded-xl text-sm ">
               AI Resolved
             </span>
           </div>

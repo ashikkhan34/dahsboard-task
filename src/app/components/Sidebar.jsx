@@ -102,7 +102,7 @@ export default function Sidebar() {
                   `}
                 >
                   {item.icon}
-                  <span className="font-medium">{item.name}</span>
+                  <span className="font-medium text-sm">{item.name}</span>
                 </Link>
               </li>
             );
