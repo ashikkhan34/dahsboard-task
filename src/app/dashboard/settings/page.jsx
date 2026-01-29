@@ -158,7 +158,7 @@ const ProfileSettings = () => {
 
       {/* PASSWORD TAB */}
       {activeTab === "password" && (
-        <div className="max-w-sm border border-blue-900 rounded-2xl p-6">
+        <div className=" border border-blue-900 rounded-2xl p-6">
           <p className="mb-4">Change your password here.</p>
           <form className="space-y-4">
             <input
@@ -200,7 +200,7 @@ const InputField = ({ label, ...props }) => (
     <label className="block text-sm text-gray-400 mb-1">{label}</label>
     <input
       {...props}
-      className="w-full bg-[#0b1120] border border-slate-700 rounded-xl py-2 px-3 text-sm text-white focus:outline-none focus:border-blue-500"
+      className="w-full bg-[#0b1120] border border-green-700 rounded-xl py-2 px-3 text-sm text-white focus:outline-none focus:border-blue-500"
     />
   </div>
 );

@@ -42,7 +42,7 @@ const Pagination = () => {
   };
 
   return (
-    <div className="flex items-center justify-center mt-10 select-none">
+    <div className="flex text-xs items-center justify-center mt-10 select-none">
       <div className="flex items-center space-x-6">
         {/* Previous Button */}
         <button
@@ -50,8 +50,10 @@ const Pagination = () => {
           disabled={currentPage === 1}
           className="flex items-center text-[#4b5563] hover:text-gray-300 disabled:opacity-50 transition-colors"
         >
-          <ChevronLeft size={18} className="mr-1" />
-          <span className="text-sm text-gray-300">Previous</span>
+          <ChevronLeft size={18} className="mr-1 text-white" />
+          <span className="text-sm hidden md:block text-gray-300">
+            Previous
+          </span>
         </button>
 
         {renderPageNumbers()}
@@ -64,8 +66,8 @@ const Pagination = () => {
           disabled={currentPage === totalPages}
           className="flex items-center text-[#3b82f6] hover:text-blue-400 disabled:opacity-50 transition-colors"
         >
-          <span className="text-sm">Next</span>
-          <ChevronRight size={18} className="ml-1" />
+          <span className="text-sm hidden md:block">Next</span>
+          <ChevronRight size={18} className="ml-1 text-white" />
         </button>
       </div>
     </div>
