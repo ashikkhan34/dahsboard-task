@@ -1,4 +1,4 @@
-# This is Dashboard design 
+# This is the Admin Panel for the Call Center
 
 ## Project Overview
 **Dashboard App** is a responsive admin panel built with **Next.js**, **React**, and **Tailwind CSS**.  
@@ -45,8 +45,7 @@ The dashboard provides a clear and interactive UI to manage appointments, call l
 - **Styling:** Tailwind CSS 3+, custom CSS variables
 - **Icons:** Lucide-react
 - **Animations:** react-countup
-- **Authentication & Backend:** (Optional / Future Integration)
-- **Deployment:** Vercel / Surge
+- **Deployment:** Vercel 
 
 ---
 
@@ -58,5 +57,5 @@ The dashboard provides a clear and interactive UI to manage appointments, call l
 - Typography and padding adjusted for readability on small screens.
 
 ---
-
+### live link  --  https://dahsboard-task.vercel.app/dashboard/dashboard-overview
 
