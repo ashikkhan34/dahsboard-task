@@ -14,14 +14,12 @@ const BookingLink = () => {
     });
   };
   return (
-    <div className="w-full bg-[#1A1A2E] border border-slate-800 rounded-xl mt-5 p-5">
-      <h2 className="text-sm font-medium mb-4 text-slate-200">
+    <div className="w-full bg-[#1A1A2E] border border-slate-800 rounded-xl mt-5 px-4 lg:px-0 p-5">
+      <h2 className="text-sm font-medium mb-4 px-4 text-slate-200">
         Your Booking Link
       </h2>
 
-      {/* Input + Button */}
-      <div className="flex flex-col sm:flex-row items-stretch gap-3">
-        {/* Input */}
+      <div className="flex flex-col sm:flex-row items-stretch p-4 gap-3">
         <div className="flex-1 relative">
           <input
             type="text"
@@ -30,10 +28,9 @@ const BookingLink = () => {
           />
         </div>
 
-        {/* Button */}
         <button
           onClick={handleCopy}
-          className="flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-b from-[#1e293b] to-[#0f172a] border border-white/20 bg-white/10 shadow-[inset_0_0_20px_rgba(255,255,255,0.35)]
+          className="flex items-center cursor-pointer justify-center gap-2 px-5 py-3 rounded-xl bg-linear-to-b from-[#1e293b] to-[#0f172a] border border-white/20 bg-white/10 shadow-[inset_0_0_20px_rgba(255,255,255,0.35)]
   "
         >
           <Copy size={18} />

@@ -64,7 +64,7 @@ const CallLogPage = () => {
       <div className="md:flex  justify-between items-center  mb-8">
         <div className="relative flex-1 w-full lg:max-w-[480px] mb-4 md:mb-0 ">
           <Search
-            className="absolute left-3 top-1/2 -translate-y-1/2 ml-3 text-slate-500"
+            className="absolute md:left-3 top-1/2 -translate-y-1/2 ml-3 text-slate-500"
             size={18}
           />
           <input
@@ -101,7 +101,7 @@ const CallLogPage = () => {
                       <Phone size={16} className="text-white" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-sm">{call.phone}</h4>
+                      <h4 className="text-xs md:text-sm">{call.phone}</h4>
                       <p className="text-xs text-slate-500">{call.date}</p>
                     </div>
                   </div>

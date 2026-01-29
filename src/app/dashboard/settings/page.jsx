@@ -30,9 +30,18 @@ const ProfileSettings = () => {
     });
   };
 
+  const handleUpdatePassword = () => {
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "Your password has been updated",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+  };
+
   return (
     <div className="text-white">
-      {/* Tabs */}
       <div className="flex gap-10 pb-4 mb-8">
         <button
           onClick={() => {
@@ -60,10 +69,8 @@ const ProfileSettings = () => {
         </button>
       </div>
 
-      {/* PROFILE TAB */}
       {activeTab === "profile" && (
         <div className="space-y-8 animate-fadeIn">
-          {/* Profile Image */}
           <div>
             <h3 className="text-lg mb-1">Profile Image</h3>
             <div className="flex items-end gap-4">
@@ -90,7 +97,6 @@ const ProfileSettings = () => {
             </div>
           </div>
 
-          {/* VIEW MODE */}
           {!isEditing && (
             <div className="w-full max-w-lg">
               <ProfileRow label="Full Name" value={formData.name} />
@@ -100,10 +106,9 @@ const ProfileSettings = () => {
             </div>
           )}
 
-          {/* EDIT MODE */}
           {isEditing && (
-            <div className="max-w-3/4  space-y-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="md:w-3/4 w-full space-y-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-8">
                 <InputField
                   label="Full Name"
                   name="name"
@@ -117,7 +122,7 @@ const ProfileSettings = () => {
                   onChange={handleChange}
                 />
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-8 ">
                 <InputField
                   label="Store Name"
                   name="storeName"
@@ -153,21 +158,28 @@ const ProfileSettings = () => {
 
       {/* PASSWORD TAB */}
       {activeTab === "password" && (
-        <div className="space-y-6 animate-fadeIn max-w-sm">
-          <p className="text-gray-400">Change your password here.</p>
-          <input
-            type="password"
-            placeholder="Current Password"
-            className="w-full bg-white/5 border border-gray-700 p-2 rounded"
-          />
-          <input
-            type="password"
-            placeholder="New Password"
-            className="w-full bg-white/5 border border-gray-700 p-2 rounded"
-          />
-          <button className="bg-blue-600 px-4 py-2 rounded text-sm">
-            Update Password
-          </button>
+        <div className="max-w-sm border border-blue-900 rounded-2xl p-6">
+          <p className="mb-4">Change your password here.</p>
+          <form className="space-y-4">
+            <input
+              type="password"
+              required
+              placeholder="Current Password"
+              className="w-full bg-white/5 border border-gray-700 p-2 rounded"
+            />
+            <input
+              type="password"
+              required
+              placeholder="New Password"
+              className="w-full bg-white/5 border border-gray-700 p-2 rounded"
+            />
+            <button
+              onClick={handleUpdatePassword}
+              className="bg-blue-900 cursor-pointer  px-4 py-2 rounded flex mx-auto text-sm"
+            >
+              Update Password
+            </button>
+          </form>
         </div>
       )}
     </div>

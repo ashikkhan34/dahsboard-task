@@ -5,7 +5,7 @@ import CountUp from "react-countup";
 
 const AppointmentCard = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 px-2 ">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-between  ">
       <div className="h-[138px] bg-[#0f1837] rounded-xl p-6 space-y-3">
         <div className="flex items-center gap-2">
           <Calendar size={20} />

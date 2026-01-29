@@ -18,7 +18,7 @@ const Pagination = () => {
             className={`px-3 py-1 text-sm font-medium transition-all duration-200 ${
               currentPage === page
                 ? "bg-[#a3c7ff] text-[#0a192f] rounded-sm"
-                : "text-[#3b82f6] hover:text-white" 
+                : "text-[#3b82f6] hover:text-white"
             }`}
           >
             {page}
@@ -54,7 +54,6 @@ const Pagination = () => {
           <span className="text-sm text-gray-300">Previous</span>
         </button>
 
-        {/* Page Numbers */}
         {renderPageNumbers()}
 
         {/* Next Button */}

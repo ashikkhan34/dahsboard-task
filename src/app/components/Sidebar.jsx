@@ -3,7 +3,16 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, Settings, Phone, Calendar, Menu, X, LogOut } from "lucide-react";
+import {
+  Home,
+  Settings,
+  Phone,
+  Calendar,
+  Menu,
+  X,
+  LogOut,
+  Zap,
+} from "lucide-react";
 import Swal from "sweetalert2";
 
 const menuItems = [
@@ -51,7 +60,6 @@ export default function Sidebar() {
         <Menu />
       </button>
 
-      {/* Overlay */}
       {open && (
         <div
           className="fixed inset-0 bg-black/50 z-40 md:hidden"
@@ -69,11 +77,10 @@ export default function Sidebar() {
           md:translate-x-0 md:static md:flex
         `}
       >
-        {/* Logo */}
         <div className="flex items-center justify-between p-4">
           <div className="mx-auto">
-            <div className="w-12 h-12 bg-gradient-to-br from-[#F6339A] to-[#AD46FF] rounded-xl flex items-center justify-center shadow-[0_0_20px_rgba(173,70,255,0.4)]">
-              ⚡
+            <div className="w-12 h-12 bg-linear-to-br from-[#00FF88] to-[#00D4FF] rounded-xl flex items-center justify-center shadow-[0_0_20px_rgba(173,70,255,0.4)]">
+              <Zap className="text-black" />
             </div>
           </div>
 

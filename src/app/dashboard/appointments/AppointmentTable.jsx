@@ -6,7 +6,7 @@ const clientAppointments = [
     client_name: "Jane.D",
     client_phone: "01960685765",
     client_email: "admin@gmail.com",
-    device: "Apple / iPhone 13 Pro",
+    device: "Apple/iPhone_13Pro",
     repair_type: "Screen",
     date: "02/06/2026",
     slot_no: 1,
@@ -17,7 +17,7 @@ const clientAppointments = [
     client_name: "Jane.D",
     client_phone: "01960685765",
     client_email: "admin@gmail.com",
-    device: "Apple / iPhone 13 Pro",
+    device: "Apple/iPhone_13Pro",
     repair_type: "Screen",
     date: "02/06/2026",
     slot_no: 1,
@@ -28,7 +28,7 @@ const clientAppointments = [
     client_name: "Jane.D",
     client_phone: "01960685765",
     client_email: "admin@gmail.com",
-    device: "Apple / iPhone 13 Pro",
+    device: "Apple/iPhone_13Pro",
     repair_type: "Screen",
     date: "02/06/2026",
     slot_no: 1,
@@ -39,7 +39,7 @@ const clientAppointments = [
     client_name: "Jane.D",
     client_phone: "01960685765",
     client_email: "admin@gmail.com",
-    device: "Apple / iPhone 13 Pro",
+    device: "Apple/iPhone_13Pro",
     repair_type: "Screen",
     date: "02/06/2026",
     slot_no: 1,
@@ -50,7 +50,7 @@ const clientAppointments = [
     client_name: "Jane.D",
     client_phone: "01960685765",
     client_email: "admin@gmail.com",
-    device: "Apple / iPhone 13 Pro",
+    device: "Apple/iPhone_13Pro",
     repair_type: "Screen",
     date: "02/06/2026",
     slot_no: 1,
@@ -61,7 +61,7 @@ const clientAppointments = [
     client_name: "Jane.D",
     client_phone: "01960685765",
     client_email: "admin@gmail.com",
-    device: "Apple / iPhone 13 Pro",
+    device: "Apple/iPhone_13Pro",
     repair_type: "Screen",
     date: "02/06/2026",
     slot_no: 1,
@@ -71,12 +71,11 @@ const clientAppointments = [
 
 export default function AppointmentTable() {
   return (
-    <div className="w-full mt-8">
-      {/* Desktop Table */}
-      <div className=" w-[400px] flex lg:w-full overflow-x-auto mx-auto rounded-xl border border-slate-700 bg-[#111B3B]">
-        <table className="min-w-[400px] w-full text-sm text-left text-slate-300">
+    <div className=" mt-8">
+      <div className=" w-[375px] flex lg:w-full overflow-x-auto mx-auto rounded-xl border border-slate-700 bg-[#111B3B] ml-1 px-4">
+        <table className=" w-full text-sm text-left ">
           <thead>
-            <tr>
+            <tr className="text-xs md:text-sm">
               <th className="px-4 py-3">Client Name</th>
               <th className="px-4 py-3">Client Phone</th>
               <th className="px-4 py-3">Client Email</th>
