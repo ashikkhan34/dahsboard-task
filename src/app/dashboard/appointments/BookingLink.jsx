@@ -25,7 +25,7 @@ const BookingLink = () => {
         <div className="flex-1 relative">
           <input
             type="text"
-            defaultValue="https://yourapp.com/book/ashik"
+            defaultValue="https://dashboard-app.com/book/ashikkhan"
             className="w-full bg-[#0b1120] border border-slate-800 rounded-xl py-3 px-4 text-sm text-slate-300 focus:outline-none focus:border-blue-500"
           />
         </div>

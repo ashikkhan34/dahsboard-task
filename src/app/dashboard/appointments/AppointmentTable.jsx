@@ -73,8 +73,8 @@ export default function AppointmentTable() {
   return (
     <div className="w-full mt-8">
       {/* Desktop Table */}
-      <div className="max-w-full overflow-x-auto mx-auto rounded-xl border border-slate-700 bg-[#111B3B]">
-        <table className="min-w-[800px] w-full text-sm text-left text-slate-300">
+      <div className=" w-[400px] flex lg:w-full overflow-x-auto mx-auto rounded-xl border border-slate-700 bg-[#111B3B]">
+        <table className="min-w-[400px] w-full text-sm text-left text-slate-300">
           <thead>
             <tr>
               <th className="px-4 py-3">Client Name</th>
